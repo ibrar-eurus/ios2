@@ -19,6 +19,6 @@ workflows:
         script: xcode-project use-profiles  
       - name: build
         script: | 
-          xcodebuild build -workspace CodemagicSample.xcworkspace -scheme CodemagicSample
+          xcodebuild build -workspace project.xcworkspace -scheme project
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
