@@ -19,6 +19,6 @@ workflows:
         script: xcode-project use-profiles  
       - name: build
         script: | 
-          xcodebuild build -workspace project.xcworkspace -scheme project
+          xcodebuild build -workspace swiftly.xcworkspace -scheme swiftly
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
