@@ -15,8 +15,6 @@ workflows:
       - name: Install CocoaPods dependencies
         script: | 
           pod install
-      - name: Set up provisioning profiles settings on Xcode project
-        script: xcode-project use-profiles  
       - name: build
         script: | 
           xcodebuild build -workspace swiftly.xcworkspace -scheme swiftly
